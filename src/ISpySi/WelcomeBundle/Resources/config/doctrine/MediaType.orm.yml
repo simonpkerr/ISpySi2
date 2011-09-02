@@ -1,0 +1,18 @@
+ISpySi\WelcomeBundle\Entity\MediaType:
+  type: entity
+  repositoryClass: ISpySi\WelcomeBundle\Repository\MediaTypeRepository
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    name:
+      type: string
+      length: 255
+  oneToMany:
+    artWorks:
+      targetEntity: Art
+      mappedBy: mediaType
+  lifecycleCallbacks: {  }

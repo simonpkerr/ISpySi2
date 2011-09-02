@@ -1,0 +1,29 @@
+<ul id="{% if artFolder == 'compressed' %}artList{%else%}featuredArtList{%endif%}">
+{% for artWork in artWorks %}
+<li>
+    {% if artFolder == 'compressed' %}
+    <img src="{{ asset('bundles/ISpySi/images/artWork/' ~ artFolder ~ '/') ~ artWork.filename }}.jpg" alt="{{ artWork.filename }}" />
+    {% else %}
+    <img class="featuredArt" src="{{ asset('bundles/ISpySi/images/artWork/') ~ artWork.filename }}.jpg" alt="{{ artWork.filename }}" />
+    {% endif %}
+    <div class="artWorkDescription">
+    <h3>{{ artWork.filename }}</h3>
+    <dl>
+        {#<dt>Media</dt><dd>{{ artWork.mediaType.name }}</dd>#}
+        <dt>Date Added</dt><dd>{{ artWork.dateAdded|date("m/d/y") }}</dd>
+        {% if artWork.dateCreated|date("m/d/y") != "11/30/-1" %}
+        <dt>Date Created</dt><dd>{{ artWork.dateCreated|date("m/d/y") }}</dd>
+        {% endif %}
+        {% if artWork.notes|length > 0 %}
+        <dt>Notes</dt><dd>{{ artWork.notes }}</dd>
+        {% endif %}
+    </dl>
+    </div>
+    {# 
+    this template is referred to from the ArtController, featuredArtAction and is 
+    in turn called from another page, passing in a number of items to load
+    this template loops through those items and outputs them
+    #}
+</li>
+{% endfor %}
+</ul>
