@@ -1,0 +1,15 @@
+parameters:
+#    i_spy_si_user.example.class: ISpySi\UserBundle\Example
+
+services:
+  ispysi_user.registration.form.type:
+    class: ISpySi\UserBundle\Form\Type\RegistrationFormType
+    arguments: [%fos_user.model.user.class%]
+    tags:
+      - { name: form.type, alias: ispysi_user_registration }
+
+
+#    i_spy_si_user.example:
+#        class: %i_spy_si_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+

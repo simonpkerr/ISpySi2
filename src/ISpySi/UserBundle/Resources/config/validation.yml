@@ -1,0 +1,11 @@
+ISpySi\UserBundle\Entity\User:
+  properties:
+    firstname:
+      - NotBlank: ~
+      - MinLength: 3
+    surname:
+      - NotBlank: ~
+      - MinLength: { limit:3, message: "This is not a valid surname" }
+    dob:
+      - Date: ~
+          

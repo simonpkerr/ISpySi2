@@ -1,0 +1,26 @@
+ISpySi\UserBundle\Entity\User:
+  type: entity
+  table: fos_user
+  id:
+   id:
+     type: integer
+     generator: { strategy: AUTO }
+  fields:
+    firstname:
+      type: string
+      length: 65
+      nullable: true
+    surname:
+      type: string
+      length: 65
+      nullable: true
+    dob:
+      type: date
+#      minlength: 
+#        limit: 3
+#        message: "The name is too short"
+#        groups: { "Registration", "Profile" }
+          
+          
+        
+     

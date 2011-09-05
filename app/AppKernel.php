@@ -18,12 +18,11 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new ISpySi\WelcomeBundle\ISpySiWelcomeBundle(),
-            new ISpySi\SecurityBundle\ISpySiSecurityBundle(),
-            new ISpySi\AdminBundle\ISpySiAdminBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new ISpySi\UserBundle\ISpySiUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            //$bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();

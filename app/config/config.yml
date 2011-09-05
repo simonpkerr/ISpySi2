@@ -58,3 +58,11 @@ jms_security_extra:
     secure_controllers:  true
     secure_all_services: false
 
+fos_user:
+  db_driver: orm
+  firewall_name: main
+  user_class: ISpySi\UserBundle\Entity\User
+  registration:
+    form:
+      type: ispysi_user_registration
+  

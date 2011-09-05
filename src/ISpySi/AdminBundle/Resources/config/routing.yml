@@ -1,3 +1,0 @@
-admin:
-    pattern:  /admin
-    defaults: { _controller: ISpySiAdminBundle:Admin:index }
