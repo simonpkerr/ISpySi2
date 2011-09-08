@@ -6,39 +6,14 @@ namespace ISpySi\UserBundle\Entity {
     use Symfony\Component\Validator\Constraints as Assert;
     
     class User extends BaseUser {
-        
-        /**
-         * @ORM\Id
-         * @ORM\Column(type="integer")
-         * @ORM\GeneratedValue(strategy="AUTO")
-         */
+
         protected $id;
-        
-//        /**
-//         * @ORM\Column(type="string", length="65")
-//         *
-//         * @Assert\NotBlank(message="Please enter your name.", groups={"Registration", "Profile"})
-//         * @Assert\MinLength(limit="3", message="The name is too short.", groups={"Registration", "Profile"})
-//         * @Assert\MaxLength(limit="65", message="The name is too long.", groups={"Registration", "Profile"})
-//         */
+
         protected $firstname;
-        
-//        /**
-//         * @ORM\Column(type="string", length="65")
-//         *
-//         * @Assert\NotBlank(message="Please enter your name.", groups={"Registration", "Profile"})
-//         * @Assert\MinLength(limit="3", message="The name is too short.", groups={"Registration", "Profile"})
-//         * @Assert\MaxLength(limit="65", message="The name is too long.", groups={"Registration", "Profile"})
-//         */
+
         protected $surname;
-        
-//        /**
-//         * @ORM\Column(type="date")
-//         *
-//         * @Assert\NotBlank(message="Please enter your name.", groups={"Registration", "Profile"})
-//         * @Assert\Date(message="Please enter a date.", groups={"Registration", "Profile"})
-//         */
-        protected $dob;
+
+        protected $dateofbirth;
         
         public function __construct(){
             parent::__construct();
@@ -74,10 +49,6 @@ namespace ISpySi\UserBundle\Entity {
         {
             return $this->firstname;
         }
-    
-    
-    
-    
 
         /**
          * Set surname
@@ -100,23 +71,23 @@ namespace ISpySi\UserBundle\Entity {
         }
 
         /**
-         * Set dob
+         * Set dateofbirth
          *
-         * @param date $dob
+         * @param date $dateofbirth
          */
-        public function setDob($dob)
+        public function setDateofbirth($dateofbirth)
         {
-            $this->dob = $dob;
+            $this->dateofbirth = $dateofbirth;
         }
 
         /**
-         * Get dob
+         * Get dateofbirth
          *
          * @return date 
          */
-        public function getDob()
+        public function getDateofbirth()
         {
-            return $this->dob;
+            return $this->dateofbirth;
         }
     }
 }

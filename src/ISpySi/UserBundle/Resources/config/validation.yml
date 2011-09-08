@@ -1,11 +1,10 @@
 ISpySi\UserBundle\Entity\User:
   properties:
-    firstname:
-      - NotBlank: ~
-      - MinLength: 3
-    surname:
-      - NotBlank: ~
-      - MinLength: { limit:3, message: "This is not a valid surname" }
-    dob:
-      - Date: ~
+      firstname:
+        - NotBlank: { groups: [Registration, Profile] }
+        - MinLength: { limit: 3, groups: [Registration, Profile] }
+      surname:
+        - NotBlank: { message: "Surname should not be blank" , groups: [Registration, Profile] }
+        - MinLength: { limit: 3, message: "Surname must have at least {{ limit }} characters", groups: [Registration, Profile] }
           
+

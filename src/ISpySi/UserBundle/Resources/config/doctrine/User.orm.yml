@@ -9,18 +9,14 @@ ISpySi\UserBundle\Entity\User:
     firstname:
       type: string
       length: 65
-      nullable: true
     surname:
       type: string
       length: 65
-      nullable: true
-    dob:
+      label: "Surname"
+    dateofbirth:
       type: date
-#      minlength: 
-#        limit: 3
-#        message: "The name is too short"
-#        groups: { "Registration", "Profile" }
-          
+      
+
           
         
      

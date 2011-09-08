@@ -1,3 +1,7 @@
+welcomeDefault:
+    pattern:  /
+    defaults: { _controller: ISpySiWelcomeBundle:Default:index }
+
 welcome:
     pattern:  /index
     defaults: { _controller: ISpySiWelcomeBundle:Default:index }

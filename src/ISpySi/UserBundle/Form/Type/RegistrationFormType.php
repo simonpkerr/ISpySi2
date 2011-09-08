@@ -10,9 +10,12 @@ class RegistrationFormType extends BaseType {
         parent::buildForm($builder, $options);
         
         //any extra properties are added here
-        $builder->add('firstname');
-        $builder->add('surname');
-        $builder->add('dob');
+        $builder->add('firstname', 'text');
+        $builder->add('surname', 'text');
+        $builder->add('dateofbirth', 'birthday', array(
+            'years' => range(1920, date('Y')),
+            'label' => 'Date of Birth',
+            ));
         
     }
     

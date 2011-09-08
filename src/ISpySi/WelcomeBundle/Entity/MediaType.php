@@ -68,4 +68,14 @@ class MediaType
     {
         $this->artWorks[] = $artWorks;
     }
+
+    /**
+     * Add artWorks
+     *
+     * @param ISpySi\WelcomeBundle\Entity\Art $artWorks
+     */
+    public function addArt(\ISpySi\WelcomeBundle\Entity\Art $artWorks)
+    {
+        $this->artWorks[] = $artWorks;
+    }
 }
