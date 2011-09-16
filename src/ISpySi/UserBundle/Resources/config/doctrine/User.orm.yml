@@ -12,7 +12,6 @@ ISpySi\UserBundle\Entity\User:
     surname:
       type: string
       length: 65
-      label: "Surname"
     dateofbirth:
       type: date
       

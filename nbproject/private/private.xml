@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/C:/xampp/htdocs/ISpySi/src/ISpySi/UserBundle/Form/Type/RegistrationFormType.php</file>
-        <file>file:/C:/xampp/htdocs/ISpySi/vendor/bundles/FOS/UserBundle/Controller/RegistrationController.php</file>
-        <file>file:/C:/xampp/htdocs/ISpySi/vendor/bundles/FOS/UserBundle/Resources/config/registration.xml</file>
-        <file>file:/C:/xampp/htdocs/ISpySi/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig</file>
-        <file>file:/C:/xampp/htdocs/ISpySi/vendor/bundles/FOS/UserBundle/Resources/translations/FOSUserBundle.en.yml</file>
-        <file>file:/C:/xampp/htdocs/ISpySi/src/ISpySi/UserBundle/Entity/User.php</file>
-        <file>file:/C:/xampp/htdocs/ISpySi/vendor/bundles/FOS/UserBundle/Form/Type/RegistrationFormType.php</file>
-        <file>file:/C:/xampp/htdocs/ISpySi/app/config/config.yml</file>
-    </open-files>
 </project-private>
